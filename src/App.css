@@ -1,0 +1,152 @@
+:root {
+  --main-color: #65d832;
+  --second-color: #5a1a52;
+  --third-color: #6d1766;
+  --target-color: #5a1a52;
+}
+
+/* TARJETAS */
+
+body {
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  /* background: url("background.jpg"); */
+  /* overflow: hidden; */
+  /* padding: 30px; */
+}
+
+h1 {
+  color: var(--second-color);
+  text-shadow: black 1px 1px 1px;
+}
+
+p {
+  color: var(--second-color);
+  text-align: center;
+}
+
+.boton--primario {
+  display: block;
+  color: var(--main-color);
+  background: var(--second-color);
+}
+
+.boton {
+  color: var(--main-color);
+  background: var(--second-color);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border: none;
+  text-decoration: none;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background: var(--third-color);
+}
+
+.box-text {
+  width: 98%;
+  margin-bottom: 5px;
+}
+
+.card {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 150px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.card-image {
+  grid-area: image;
+  /* background: url("img1.jpg"); */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: var(--target-color);
+  font-size: 13px;
+}
+
+.card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: var(--target-color);
+}
+
+.card-stats .stat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.card-stats .border {
+  border-left: 2px solid var(--main-color);
+  border-right: 2px solid var(--main-color);
+}
+
+.card-stats .value {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-stats .value sup {
+  font-size: 12px;
+}
+
+.card-stats .type {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
