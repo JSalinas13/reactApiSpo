@@ -6,8 +6,8 @@ import axios from 'axios';
 function App() {
 
 
-  const CLIENT_ID = "cd68fb72c48e4f60bd41cf8c250bfae6";
-  const REDIRECT_URI = "https://main--candid-syrniki-97815a.netlify.app/";
+  const CLIENT_ID = "cd68fb72c48e4f60bd41cf8c250bfae6"
+  const REDIRECT_URI = "https://spotifyapireact.netlify.app/"//"http://localhost:3000/"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
 
