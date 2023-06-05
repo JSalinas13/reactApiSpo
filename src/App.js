@@ -6,10 +6,10 @@ import axios from 'axios';
 function App() {
 
 
-  const CLIENT_ID = process.env.REACT_APP_CLIENT_ID_FRANCO;//Franco
-  const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI
-  const AUTH_ENDPOINT = process.env.REACT_APP_AUTH_ENDPOINT
-  const RESPONSE_TYPE = process.env.REACT_APP_RESPONSE_TYPE
+  const CLIENT_ID = "cd68fb72c48e4f60bd41cf8c250bfae6";
+  const REDIRECT_URI = "https://main--candid-syrniki-97815a.netlify.app/";
+  const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
+  const RESPONSE_TYPE = "token"
 
   const [token, setToken] = useState("")
   const [searchKey, setSearchKey] = useState("")
