@@ -101,7 +101,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Spotify API con React</h1>
+        <h1>Consumiendo un API con React</h1>
         {!token ?
           <a className="boton" href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Iniciar sesión</a>
           : <button className="boton" onClick={salir}>Cerrar sesión</button>}
